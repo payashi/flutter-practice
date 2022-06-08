@@ -1,0 +1,15 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - name: Setup Firebase
+    command: >
+      curl -sL https://firebase.tools | bash &&
+      cd /workspace/flutter-kisopro &&
+      flutter upgrade &&
+      flutter pub get
+
+vscode:
+  extensions:
+    - dart-code.dart-code@3.20.1
+    - dart-code.flutter@3.20.0
