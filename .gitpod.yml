@@ -5,7 +5,7 @@ tasks:
   - name: Setup Firebase
     command: >
       curl -sL https://firebase.tools | bash &&
-      cd /workspace/flutter-kisopro &&
+      cd /workspace/flutter-practice &&
       flutter upgrade &&
       flutter pub get
 
